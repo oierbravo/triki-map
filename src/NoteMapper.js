@@ -5,6 +5,18 @@ import * as KeyboardNotes from './maps/Keyboard.json';
 var _ = require('lodash');
 
 var tunning = 'BbEb'
+var input = '';
+
+export function toMidi(note){
+  var midis =  MidiNotes.filter(function(el,index){
+    if(el.name == note){
+      return el;
+    }
+  });
+  return midis.map(function(el){
+    return el.midi;
+  });
+}
 
 export function midi(midi){
   //console.log(MidiNotes);
@@ -13,9 +25,28 @@ export function midi(midi){
       return el;
     }
   });
-  return midis.map(function(el){
+  var notes = midis.map(function(el){
     return el.name;
   });
+  return notes;
+}
+
+export function toTriki(note){
+  var zenbakiak =  TrikiNotes[tunning].filter(function(el,index){
+    if(el.Ireki == note || el.Itxi == note){
+      return el;
+    }
+  });
+  return zenbakiak.map(function(el){
+    if(el.Ireki == note){
+      return "+" + el.Zenbakia;
+    }
+    if(el.Itxi == note){
+      return `${el.Zenbakia}`;
+    }
+    return el;
+  });
+
 }
 
 export function triki(triki){

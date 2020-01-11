@@ -430,6 +430,18 @@
 
   var tunning = 'BbEb';
 
+  function toMidi(note){
+    console.log(note);
+    var midis =  MidiNotes.filter(function(el,index){
+      if(el.name == note){
+        return el;
+      }
+    });
+    return midis.map(function(el){
+      return el.midi;
+    });
+  }
+
   function midi(midi){
     //console.log(MidiNotes);
     var midis =  MidiNotes.filter(function(el,index){
@@ -437,9 +449,28 @@
         return el;
       }
     });
-    return midis.map(function(el){
+    var notes = midis.map(function(el){
       return el.name;
     });
+    return notes;
+  }
+
+  function toTriki(note){
+    var zenbakiak =  TrikiNotes[tunning].filter(function(el,index){
+      if(el.Ireki == note || el.Itxi == note){
+        return el;
+      }
+    });
+    return zenbakiak.map(function(el){
+      if(el.Ireki == note){
+        return "+" + el.Zenbakia;
+      }
+      if(el.Itxi == note){
+        return `${el.Zenbakia}`;
+      }
+      return el;
+    });
+
   }
 
   function triki(triki){
@@ -462,6 +493,7 @@
       return note;
     });
   }
+
 
   function nameToMidi(name) {
     for (let key in MidiNotes){
@@ -524,7 +556,9 @@
 
   var NoteMapper = /*#__PURE__*/Object.freeze({
     __proto__: null,
+    toMidi: toMidi,
     midi: midi,
+    toTriki: toTriki,
     triki: triki,
     nameToMidi: nameToMidi,
     midiToName: midiToName,
