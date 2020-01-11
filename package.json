@@ -1,0 +1,27 @@
+{
+  "name": "triki-maps",
+  "version": "0.0.1",
+  "description": "Triki note converter",
+  "main": "dist/trikiMap.js",
+  "browser": "dist/trikiMaps.browser.min.js",
+  "module": "dist/trikiMaps.module.js",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "author": "oierbravo@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-json-pattern": "^1.1.0",
+    "mocha": "^6.2.2",
+    "rollup": "^1.27.9",
+    "rollup-plugin-babel-minify": "^9.1.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify": "^6.0.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

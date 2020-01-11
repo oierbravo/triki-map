@@ -1,0 +1,237 @@
+{
+
+  "DoFa": [
+   {
+    "Zenbakia": 1,
+    "Itxi": "G5",
+    "Ireki": "D5"
+  },
+   {
+    "Zenbakia": 2,
+    "Itxi": "A5",
+    "Ireki": "E5"
+  },
+   {
+    "Zenbakia": 3,
+    "Itxi": "E5",
+    "Ireki": "B4"
+  },
+   {
+    "Zenbakia": 4,
+    "Itxi": "F5",
+    "Ireki": "D5"
+  },
+   {
+    "Zenbakia": 5,
+    "Itxi": "C5",
+    "Ireki": "A4"
+  },
+   {
+    "Zenbakia": 6,
+    "Itxi": "C5",
+    "Ireki": "Bb4"
+  },
+   {
+    "Zenbakia": 7,
+    "Itxi": "G4",
+    "Ireki": "F4"
+  },
+   {
+    "Zenbakia": 8,
+    "Itxi": "A4",
+    "Ireki": "G4"
+  },
+   {
+    "Zenbakia": 9,
+    "Itxi": "E4",
+    "Ireki": "D4"
+  },
+   {
+    "Zenbakia": 10,
+    "Itxi": "F4",
+    "Ireki": "E4"
+  },
+   {
+    "Zenbakia": 11,
+    "Itxi": "C4",
+    "Ireki": "B3"
+  },
+   {
+    "Zenbakia": 12,
+    "Itxi": "C4",
+    "Ireki": "D4"
+  },
+   {
+    "Zenbakia": 13,
+    "Itxi": "G3",
+    "Ireki": "A3"
+  },
+   {
+    "Zenbakia": 14,
+    "Itxi": "A3",
+    "Ireki": "Bb3"
+  },
+   {
+    "Zenbakia": 15,
+    "Itxi": "E3",
+    "Ireki": "F3"
+  },
+   {
+    "Zenbakia": 16,
+    "Itxi": "F3",
+    "Ireki": "G3"
+  },
+   {
+    "Zenbakia": 17,
+    "Itxi": "C3",
+    "Ireki": "D3"
+  },
+   {
+    "Zenbakia": 18,
+    "Itxi": "C3",
+    "Ireki": "E3"
+  },
+   {
+    "Zenbakia": 19,
+    "Itxi": "G2",
+    "Ireki": "B2"
+  },
+   {
+    "Zenbakia": 20,
+    "Itxi": "Eb4",
+    "Ireki": "Cs4"
+  },
+   {
+    "Zenbakia": 21,
+    "Itxi": "Fs3",
+    "Ireki": "Gs3"
+  },
+   {
+    "Zenbakia": 22,
+    "Itxi": "Fs4",
+    "Ireki": "Gs4"
+  },
+   {
+    "Zenbakia": 23,
+    "Itxi": "Eb3",
+    "Ireki": "Cs3"
+  }
+  ],
+"BbEb": [
+   {
+    "Zenbakia": 1,
+    "Ireki": "C5",
+    "Itxi": "F5"
+  },
+   {
+    "Zenbakia": 2,
+    "Ireki": "D5",
+    "Itxi": "G5"
+  },
+   {
+    "Zenbakia": 3,
+    "Ireki": "A4",
+    "Itxi": "D5"
+  },
+   {
+    "Zenbakia": 4,
+    "Ireki": "C5",
+    "Itxi": "Eb5"
+  },
+   {
+    "Zenbakia": 5,
+    "Ireki": "G4",
+    "Itxi": "Bb4"
+  },
+   {
+    "Zenbakia": 6,
+    "Ireki": "Gs4",
+    "Itxi": "Bb4"
+  },
+   {
+    "Zenbakia": 7,
+    "Ireki": "Eb4",
+    "Itxi": "F4"
+  },
+   {
+    "Zenbakia": 8,
+    "Ireki": "F4",
+    "Itxi": "G4"
+  },
+   {
+    "Zenbakia": 9,
+    "Ireki": "C4",
+    "Itxi": "D4"
+  },
+   {
+    "Zenbakia": 10,
+    "Ireki": "D4",
+    "Itxi": "Eb4"
+  },
+   {
+    "Zenbakia": 11,
+    "Ireki": "A3",
+    "Itxi": "Bb3"
+  },
+   {
+    "Zenbakia": 12,
+    "Ireki": "C4",
+    "Itxi": "Bb3"
+  },
+   {
+    "Zenbakia": 13,
+    "Ireki": "G3",
+    "Itxi": "F3"
+  },
+   {
+    "Zenbakia": 14,
+    "Ireki": "Gs3",
+    "Itxi": "G3"
+  },
+   {
+    "Zenbakia": 15,
+    "Ireki": "Eb3",
+    "Itxi": "D3"
+  },
+   {
+    "Zenbakia": 16,
+    "Ireki": "F3",
+    "Itxi": "Eb3"
+  },
+   {
+    "Zenbakia": 17,
+    "Ireki": "C3",
+    "Itxi": "Bb2"
+  },
+   {
+    "Zenbakia": 18,
+    "Ireki": "D3",
+    "Itxi": "Bb2"
+  },
+   {
+    "Zenbakia": 19,
+    "Ireki": "A3",
+    "Itxi": "F2"
+  },
+   {
+    "Zenbakia": 20,
+    "Ireki": "B3",
+    "Itxi": "Cs4"
+  },
+   {
+    "Zenbakia": 21,
+    "Ireki": "Fs3",
+    "Itxi": "E3"
+  },
+   {
+    "Zenbakia": 22,
+    "Ireki": "Fs4",
+    "Itxi": "E4"
+  },
+   {
+    "Zenbakia": 23,
+    "Ireki": "B2",
+    "Itxi": "Cs3"
+  }
+]
+}
