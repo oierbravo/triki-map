@@ -7,6 +7,16 @@ var _ = require('lodash');
 var tunning = 'BbEb'
 var input = '';
 
+// DEVOLVER OBj To con las funciones necesarias.
+var to = function(input){
+  return {
+    input: input,
+    midi: function() {
+      
+    }
+  }
+}
+
 export function toMidi(note){
   var midis =  MidiNotes.filter(function(el,index){
     if(el.name == note){
