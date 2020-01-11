@@ -424,8 +424,40 @@ var _ = require('lodash');
 
 var tunning = 'BbEb';
 
+// DEVOLVER OBj To con las funciones necesarias.
+var to = function(input){
+  return {
+    midi: function() {
+      var midis =  MidiNotes.filter(function(el,index){
+        if(el.name == input){
+          return el;
+        }
+      });
+      return midis.map(function(el){
+        return el.midi;
+      });
+    },
+    triki: function(){
+      var zenbakiak =  TrikiNotes[tunning].filter(function(el,index){
+        if(el.Ireki == input || el.Itxi == input){
+          return el;
+        }
+      });
+      return zenbakiak.map(function(el){
+        if(el.Ireki == input){
+          return "+" + el.Zenbakia;
+        }
+        if(el.Itxi == input){
+          return `${el.Zenbakia}`;
+        }
+        return el;
+      });
+    
+    }
+  }
+};
+
 function toMidi(note){
-  console.log(note);
   var midis =  MidiNotes.filter(function(el,index){
     if(el.name == note){
       return el;
@@ -448,6 +480,20 @@ function midi(midi){
   });
   return notes;
 }
+
+function midi2(midi){
+  //console.log(MidiNotes);
+  var midis =  MidiNotes.filter(function(el,index){
+    if(el.midi == midi){
+      return el;
+    }
+  });
+  var notes = midis.map(function(el){
+    return el.name;
+  });
+  return to(notes);
+}
+
 
 function toTriki(note){
   var zenbakiak =  TrikiNotes[tunning].filter(function(el,index){
@@ -486,6 +532,27 @@ function triki(triki){
     var note = el[direction];
     return note;
   });
+}
+function triki2(triki){
+  var direction = 'Itxi';
+  if(triki.charAt(0) === '+'){
+    direction = 'Ireki';
+  }
+  var zenbakiaRaw = triki.replace('+','').replace('-','');
+
+  var zenbakiak =  TrikiNotes[tunning].filter(function(el,index){
+   
+    
+    
+    if(el.Zenbakia == zenbakiaRaw){
+      return el;
+    }
+  });
+  var output = zenbakiak.map(function(el){
+    var note = el[direction];
+    return note;
+  });
+  return to(output);
 }
 
 
@@ -552,8 +619,10 @@ var NoteMapper = /*#__PURE__*/Object.freeze({
   __proto__: null,
   toMidi: toMidi,
   midi: midi,
+  midi2: midi2,
   toTriki: toTriki,
   triki: triki,
+  triki2: triki2,
   nameToMidi: nameToMidi,
   midiToName: midiToName,
   midiToNumber: midiToNumber,

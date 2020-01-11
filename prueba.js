@@ -10,9 +10,14 @@ var convert = require('.')
 console.log("midi:",convert.midi(50));
 
 console.log("midi.toTriki:",convert.toTriki(convert.midi(50)));
+console.log("midi2.triki:",convert.midi2(50).triki());
+
+
 
 console.log("triki:",convert.triki("7"));
 console.log("triki+:",convert.triki("+7"));
 
 
 console.log("triki+.toMidi:",convert.toMidi(convert.triki("+7")));
+
+console.log("triki2.midi:",convert.triki2("+7").midi());
