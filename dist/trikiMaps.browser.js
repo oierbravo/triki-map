@@ -250,6 +250,258 @@
     'default': Triki
   });
 
+  var piano = [
+  	{
+  		Nota: "F2",
+  		NotaShifted: "F4",
+  		KeyCode: 90
+  	},
+  	{
+  		Nota: "Fs2",
+  		NotaShifted: "Fs4",
+  		KeyCode: 83
+  	},
+  	{
+  		Nota: "G2",
+  		NotaShifted: "G4",
+  		KeyCode: 88
+  	},
+  	{
+  		Nota: "Gs2",
+  		NotaShifted: "Gs4",
+  		KeyCode: 68
+  	},
+  	{
+  		Nota: "A2",
+  		NotaShifted: "A4",
+  		KeyCode: 67
+  	},
+  	{
+  		Nota: "Bb2",
+  		NotaShifted: "Bb4",
+  		KeyCode: 70
+  	},
+  	{
+  		Nota: "B2",
+  		NotaShifted: "B4",
+  		KeyCode: 86
+  	},
+  	{
+  		Nota: "C3",
+  		NotaShifted: "C5",
+  		KeyCode: 66
+  	},
+  	{
+  		Nota: "Cs3",
+  		NotaShifted: "Cs5",
+  		KeyCode: 72
+  	},
+  	{
+  		Nota: "D3",
+  		NotaShifted: "D5",
+  		KeyCode: 78
+  	},
+  	{
+  		Nota: "Eb3",
+  		NotaShifted: "Eb5",
+  		KeyCode: 74
+  	},
+  	{
+  		Nota: "E3",
+  		NotaShifted: "E5",
+  		KeyCode: 77
+  	},
+  	{
+  		Nota: "F3",
+  		NotaShifted: "F5",
+  		KeyCode: 81
+  	},
+  	{
+  		Nota: "Fs3",
+  		NotaShifted: "Fs5",
+  		KeyCode: 50
+  	},
+  	{
+  		Nota: "G3",
+  		NotaShifted: "G5",
+  		KeyCode: 87
+  	},
+  	{
+  		Nota: "Gs3",
+  		NotaShifted: "Gs5",
+  		KeyCode: 51
+  	},
+  	{
+  		Nota: "A3",
+  		NotaShifted: "A5",
+  		KeyCode: 69
+  	},
+  	{
+  		Nota: "Bb3",
+  		NotaShifted: "Bb5",
+  		KeyCode: 52
+  	},
+  	{
+  		Nota: "B3",
+  		NotaShifted: "B5",
+  		KeyCode: 82
+  	},
+  	{
+  		Nota: "C4",
+  		NotaShifted: "",
+  		KeyCode: 84
+  	},
+  	{
+  		Nota: "Cs4",
+  		NotaShifted: "",
+  		KeyCode: 54
+  	},
+  	{
+  		Nota: "D4",
+  		NotaShifted: "",
+  		KeyCode: 89
+  	},
+  	{
+  		Nota: "Eb4",
+  		NotaShifted: "",
+  		KeyCode: 55
+  	},
+  	{
+  		Nota: "E4",
+  		NotaShifted: "",
+  		KeyCode: 85
+  	}
+  ];
+  var triki = [
+  	{
+  		Zenbakia: 1,
+  		KeyCode: 221
+  	},
+  	{
+  		Zenbakia: 2,
+  		KeyCode: 187
+  	},
+  	{
+  		Zenbakia: 3,
+  		KeyCode: 219
+  	},
+  	{
+  		Zenbakia: 4,
+  		KeyCode: 189
+  	},
+  	{
+  		Zenbakia: 5,
+  		KeyCode: 80
+  	},
+  	{
+  		Zenbakia: 6,
+  		KeyCode: 48
+  	},
+  	{
+  		Zenbakia: 7,
+  		KeyCode: 79
+  	},
+  	{
+  		Zenbakia: 8,
+  		KeyCode: 57
+  	},
+  	{
+  		Zenbakia: 9,
+  		KeyCode: 73
+  	},
+  	{
+  		Zenbakia: 10,
+  		KeyCode: 56
+  	},
+  	{
+  		Zenbakia: 11,
+  		KeyCode: 85
+  	},
+  	{
+  		Zenbakia: 12,
+  		KeyCode: 55
+  	},
+  	{
+  		Zenbakia: 13,
+  		KeyCode: 89
+  	},
+  	{
+  		Zenbakia: 14,
+  		KeyCode: 54
+  	},
+  	{
+  		Zenbakia: 15,
+  		KeyCode: 84
+  	},
+  	{
+  		Zenbakia: 16,
+  		KeyCode: 53
+  	},
+  	{
+  		Zenbakia: 17,
+  		KeyCode: 82
+  	},
+  	{
+  		Zenbakia: 18,
+  		KeyCode: 52
+  	},
+  	{
+  		Zenbakia: 19,
+  		KeyCode: 69
+  	},
+  	{
+  		Zenbakia: 20,
+  		KeyCode: 51
+  	},
+  	{
+  		Zenbakia: 21,
+  		KeyCode: 87
+  	},
+  	{
+  		Zenbakia: 22,
+  		KeyCode: 50
+  	},
+  	{
+  		Zenbakia: 23,
+  		KeyCode: 81
+  	}
+  ];
+  var options = {
+  	dofa: {
+  		Zenbakia: "dofa",
+  		KeyCode: 190
+  	},
+  	sibmib: {
+  		Zenbakia: "bbeb",
+  		KeyCode: 191
+  	},
+  	itxi: {
+  		Zenbakia: "itxi",
+  		KeyCode: 90
+  	},
+  	ireki: {
+  		Zenbakia: "ireki",
+  		KeyCode: 88
+  	},
+  	biak: {
+  		Zenbakia: "biak",
+  		KeyCode: 67
+  	}
+  };
+  var Keyboard = {
+  	piano: piano,
+  	triki: triki,
+  	options: options
+  };
+
+  var KeyboardNotes = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    piano: piano,
+    triki: triki,
+    options: options,
+    'default': Keyboard
+  });
+
   var GuitarNotes = [
   	{
   		str: "E0",
@@ -740,8 +992,16 @@
   	}
   ];
 
+  var Maps = {
+      
+          Triki:TrikiNotes,
+          Keyboard:KeyboardNotes,
+          Guitar:GuitarNotes,
+          Midi:MidiNotes
+      
+  };
+
   //import MidiMap from './MidiMap';
-  var _ = require('lodash');
 
   var tunning = 'BbEb';
 
@@ -752,7 +1012,7 @@
         return input;
       },
       midi: function() {
-        var midis =  MidiNotes.filter(function(el,index){
+        var midis =  Maps.Midi.filter(function(el,index){
           if(el.note == input){
             return el;
           }
@@ -761,8 +1021,8 @@
           return el.midi;
         });
       },
-      triki: function(){
-        var zenbakiak =  TrikiNotes[tunning].filter(function(el,index){
+      triki: function(tune = tunning){
+        var zenbakiak =  Maps.Triki[tune].filter(function(el,index){
           if(el.Ireki == input || el.Itxi == input){
             return el;
           }
@@ -779,7 +1039,7 @@
       
       },
       guitar: function(){
-        var strings =  GuitarNotes.filter(function(el,index){
+        var strings =  Maps.Guitar.filter(function(el,index){
           if(el.note == input){
             return el;
           }
@@ -794,7 +1054,7 @@
 
   function midi(midi){
     //console.log(MidiNotes);
-    var midis =  MidiNotes.filter(function(el,index){
+    var midis =  Maps.Midi.filter(function(el,index){
       if(el.midi == midi){
         return el;
       }
@@ -805,14 +1065,14 @@
     return to(notes);
   }
 
-  function triki(triki){
+  function triki$1(triki){
     var direction = 'Itxi';
     if(triki.charAt(0) === '+'){
       direction = 'Ireki';
     }
     var zenbakiaRaw = triki.replace('+','').replace('-','');
 
-    var zenbakiak =  TrikiNotes[tunning].filter(function(el,index){
+    var zenbakiak =  Maps.Triki[tunning].filter(function(el,index){
      
       
       
@@ -827,7 +1087,7 @@
     return to(output);
   }
   function guitar(input){
-    var strings =  GuitarNotes.filter(function(el,index){
+    var strings = Maps.Guitar.filter(function(el,index){
       if(el.str == input){
         return el;
       }
@@ -841,7 +1101,7 @@
   var NoteMapper = /*#__PURE__*/Object.freeze({
     __proto__: null,
     midi: midi,
-    triki: triki,
+    triki: triki$1,
     guitar: guitar
   });
 

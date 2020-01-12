@@ -1,12 +1,6 @@
-//import MidiMap from './MidiMap';
-import * as TrikiNotes from './maps/Triki.json';
-import {default as GuitarNotes} from './maps/Guitar.json';
-import {default as MidiNotes} from './maps/Midi.json';
-import * as KeyboardNotes from './maps/Keyboard.json';
-var _ = require('lodash');
+import {default as Maps} from './maps/index.js';
 
 var tunning = 'BbEb'
-var input = '';
 
 var to = function(input){
   return {
@@ -15,7 +9,7 @@ var to = function(input){
       return input;
     },
     midi: function() {
-      var midis =  MidiNotes.filter(function(el,index){
+      var midis =  Maps.Midi.filter(function(el,index){
         if(el.note == input){
           return el;
         }
@@ -24,8 +18,8 @@ var to = function(input){
         return el.midi;
       });
     },
-    triki: function(){
-      var zenbakiak =  TrikiNotes[tunning].filter(function(el,index){
+    triki: function(tune = tunning){
+      var zenbakiak =  Maps.Triki[tune].filter(function(el,index){
         if(el.Ireki == input || el.Itxi == input){
           return el;
         }
@@ -42,7 +36,7 @@ var to = function(input){
     
     },
     guitar: function(){
-      var strings =  GuitarNotes.filter(function(el,index){
+      var strings =  Maps.Guitar.filter(function(el,index){
         if(el.note == input){
           return el;
         }
@@ -56,8 +50,7 @@ var to = function(input){
 }
 
 export function midi(midi){
-  //console.log(MidiNotes);
-  var midis =  MidiNotes.filter(function(el,index){
+  var midis =  Maps.Midi.filter(function(el,index){
     if(el.midi == midi){
       return el;
     }
@@ -68,14 +61,14 @@ export function midi(midi){
   return to(notes);
 }
 
-export function triki(triki){
+export function triki(triki,tune = tunning){
   var direction = 'Itxi';
   if(triki.charAt(0) === '+'){
     direction = 'Ireki';
   }
   var zenbakiaRaw = triki.replace('+','').replace('-','');
 
-  var zenbakiak =  TrikiNotes[tunning].filter(function(el,index){
+  var zenbakiak =  Maps.Triki[tunning].filter(function(el,index){
    
     
     
@@ -90,7 +83,7 @@ export function triki(triki){
   return to(output);
 }
 export function guitar(input){
-  var strings =  GuitarNotes.filter(function(el,index){
+  var strings = Maps.Guitar.filter(function(el,index){
     if(el.str == input){
       return el;
     }
