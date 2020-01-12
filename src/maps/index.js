@@ -4,10 +4,8 @@ import {default as GuitarNotes} from './Guitar.json';
 import {default as MidiNotes} from './Midi.json';
 
 export default {
-    
         Triki:TrikiNotes,
         Keyboard:KeyboardNotes,
         Guitar:GuitarNotes,
         Midi:MidiNotes
-    
 };
