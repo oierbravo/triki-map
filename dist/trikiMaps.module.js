@@ -400,6 +400,162 @@ var GuitarNotes = [
 	{
 		str: "D12",
 		note: "D3"
+	},
+	{
+		str: "G0",
+		note: "G3"
+	},
+	{
+		str: "G1",
+		note: "Gs3"
+	},
+	{
+		str: "G2",
+		note: "A3"
+	},
+	{
+		str: "G3",
+		note: "Bb3"
+	},
+	{
+		str: "G4",
+		note: "B3"
+	},
+	{
+		str: "G5",
+		note: "C4"
+	},
+	{
+		str: "G6",
+		note: "Cs4"
+	},
+	{
+		str: "G7",
+		note: "D4"
+	},
+	{
+		str: "G8",
+		note: "Eb4"
+	},
+	{
+		str: "G9",
+		note: "E4"
+	},
+	{
+		str: "G10",
+		note: "F4"
+	},
+	{
+		str: "G11",
+		note: "FS4"
+	},
+	{
+		str: "G12",
+		note: "E4"
+	},
+	{
+		str: "B0",
+		note: "B3"
+	},
+	{
+		str: "B1",
+		note: "C4"
+	},
+	{
+		str: "B2",
+		note: "Cs4"
+	},
+	{
+		str: "B3",
+		note: "D4"
+	},
+	{
+		str: "B4",
+		note: "Eb4"
+	},
+	{
+		str: "B5",
+		note: "E4"
+	},
+	{
+		str: "B6",
+		note: "F4"
+	},
+	{
+		str: "B7",
+		note: "Fs4"
+	},
+	{
+		str: "B8",
+		note: "G4"
+	},
+	{
+		str: "B9",
+		note: "Gs4"
+	},
+	{
+		str: "B10",
+		note: "A4"
+	},
+	{
+		str: "B11",
+		note: "Bb4"
+	},
+	{
+		str: "B12",
+		note: "B4"
+	},
+	{
+		str: "e0",
+		note: "E4"
+	},
+	{
+		str: "e1",
+		note: "F4"
+	},
+	{
+		str: "e2",
+		note: "Fs4"
+	},
+	{
+		str: "e3",
+		note: "G4"
+	},
+	{
+		str: "e4",
+		note: "Gs4"
+	},
+	{
+		str: "e5",
+		note: "A4"
+	},
+	{
+		str: "e6",
+		note: "Bb4"
+	},
+	{
+		str: "e7",
+		note: "B4"
+	},
+	{
+		str: "e8",
+		note: "C5"
+	},
+	{
+		str: "e9",
+		note: "Cs5"
+	},
+	{
+		str: "e10",
+		note: "D5"
+	},
+	{
+		str: "e11",
+		note: "Eb5"
+	},
+	{
+		str: "e12",
+		note: "E5"
 	}
 ];
 
