@@ -7,17 +7,15 @@ var convert = require('.')
 //console.log('nameToNumber: F4,',trikiNotes.nameToNumber('F4'));
 //console.log('numberToMidi: 10',trikiNotes.numberToMidi(10));
 
-console.log("midi:",convert.midi(50));
-
-console.log("midi.toTriki:",convert.toTriki(convert.midi(50)));
-console.log("midi2.triki:",convert.midi2(50).triki());
+console.log("midi.note:",convert.midi(50).note());
+console.log("midi.triki:",convert.midi(50).triki());
 
 
 
-console.log("triki:",convert.triki("7"));
-console.log("triki+:",convert.triki("+7"));
+console.log("triki.note:",convert.triki("7").note());
+console.log("triki+:.note",convert.triki("+7").note());
 
+console.log("triki.midi:",convert.triki("+7").midi());
 
-console.log("triki+.toMidi:",convert.toMidi(convert.triki("+7")));
-
-console.log("triki2.midi:",convert.triki2("+7").midi());
+console.log("guitar:",convert.guitar("A2").note());
+console.log("guitar.midi:",convert.guitar("A2").midi());

@@ -244,177 +244,336 @@ var TrikiNotes = /*#__PURE__*/Object.freeze({
   'default': Triki
 });
 
+var GuitarNotes = [
+	{
+		str: "E0",
+		note: "E2"
+	},
+	{
+		str: "E1",
+		note: "F2"
+	},
+	{
+		str: "E2",
+		note: "Fs2"
+	},
+	{
+		str: "E3",
+		note: "G2"
+	},
+	{
+		str: "E4",
+		note: "Gs2"
+	},
+	{
+		str: "E5",
+		note: "A2"
+	},
+	{
+		str: "E6",
+		note: "Bb2"
+	},
+	{
+		str: "E7",
+		note: "B2"
+	},
+	{
+		str: "E8",
+		note: "C3"
+	},
+	{
+		str: "E9",
+		note: "Cs3"
+	},
+	{
+		str: "E10",
+		note: "D3"
+	},
+	{
+		str: "E11",
+		note: "Eb3"
+	},
+	{
+		str: "E12",
+		note: "E"
+	},
+	{
+		str: "A0",
+		note: "A2"
+	},
+	{
+		str: "A1",
+		note: "Bb2"
+	},
+	{
+		str: "A2",
+		note: "B2"
+	},
+	{
+		str: "A3",
+		note: "C3"
+	},
+	{
+		str: "A4",
+		note: "Cs3"
+	},
+	{
+		str: "A5",
+		note: "D3"
+	},
+	{
+		str: "A6",
+		note: "Eb3"
+	},
+	{
+		str: "A7",
+		note: "E3"
+	},
+	{
+		str: "A8",
+		note: "F3"
+	},
+	{
+		str: "A9",
+		note: "Fs3"
+	},
+	{
+		str: "A10",
+		note: "G3"
+	},
+	{
+		str: "A11",
+		note: "Gs3"
+	},
+	{
+		str: "A12",
+		note: "A3"
+	},
+	{
+		str: "D0",
+		note: "D3"
+	},
+	{
+		str: "D1",
+		note: "Eb3"
+	},
+	{
+		str: "D2",
+		note: "E3"
+	},
+	{
+		str: "D3",
+		note: "F3"
+	},
+	{
+		str: "D4",
+		note: "Fs3"
+	},
+	{
+		str: "D5",
+		note: "G3"
+	},
+	{
+		str: "D6",
+		note: "Gs3"
+	},
+	{
+		str: "D7",
+		note: "A3"
+	},
+	{
+		str: "D8",
+		note: "Bb3"
+	},
+	{
+		str: "D9",
+		note: "B3"
+	},
+	{
+		str: "D10",
+		note: "C3"
+	},
+	{
+		str: "D11",
+		note: "Cs3"
+	},
+	{
+		str: "D12",
+		note: "D3"
+	}
+];
+
 var MidiNotes = [
 	{
-		name: "F2",
+		note: "F2",
 		midi: "41"
 	},
 	{
-		name: "Fs2",
+		note: "Fs2",
 		midi: "42"
 	},
 	{
-		name: "G2",
+		note: "G2",
 		midi: "43"
 	},
 	{
-		name: "Gs2",
+		note: "Gs2",
 		midi: "44"
 	},
 	{
-		name: "A2",
+		note: "A2",
 		midi: "45"
 	},
 	{
-		name: "Bb2",
+		note: "Bb2",
 		midi: "46"
 	},
 	{
-		name: "B2",
+		note: "B2",
 		midi: "47"
 	},
 	{
-		name: "C3",
+		note: "C3",
 		midi: "48"
 	},
 	{
-		name: "Cs3",
+		note: "Cs3",
 		midi: "49"
 	},
 	{
-		name: "D3",
+		note: "D3",
 		midi: "50"
 	},
 	{
-		name: "Eb3",
+		note: "Eb3",
 		midi: "51"
 	},
 	{
-		name: "E3",
+		note: "E3",
 		midi: "52"
 	},
 	{
-		name: "F3",
+		note: "F3",
 		midi: "53"
 	},
 	{
-		name: "Fs3",
+		note: "Fs3",
 		midi: "54"
 	},
 	{
-		name: "G3",
+		note: "G3",
 		midi: "55"
 	},
 	{
-		name: "Gs3",
+		note: "Gs3",
 		midi: "56"
 	},
 	{
-		name: "A3",
+		note: "A3",
 		midi: "57"
 	},
 	{
-		name: "Bb3",
+		note: "Bb3",
 		midi: "58"
 	},
 	{
-		name: "B3",
+		note: "B3",
 		midi: "59"
 	},
 	{
-		name: "C4",
+		note: "C4",
 		midi: "60"
 	},
 	{
-		name: "Cs4",
+		note: "Cs4",
 		midi: "61"
 	},
 	{
-		name: "D4",
+		note: "D4",
 		midi: "62"
 	},
 	{
-		name: "Eb4",
+		note: "Eb4",
 		midi: "63"
 	},
 	{
-		name: "E4",
+		note: "E4",
 		midi: "64"
 	},
 	{
-		name: "F4",
+		note: "F4",
 		midi: "65"
 	},
 	{
-		name: "Fs4",
+		note: "Fs4",
 		midi: "66"
 	},
 	{
-		name: "G4",
+		note: "G4",
 		midi: "67"
 	},
 	{
-		name: "Gs4",
+		note: "Gs4",
 		midi: "68"
 	},
 	{
-		name: "A4",
+		note: "A4",
 		midi: "69"
 	},
 	{
-		name: "Bb4",
+		note: "Bb4",
 		midi: "70"
 	},
 	{
-		name: "B4",
+		note: "B4",
 		midi: "71"
 	},
 	{
-		name: "C5",
+		note: "C5",
 		midi: "72"
 	},
 	{
-		name: "Cs5",
+		note: "Cs5",
 		midi: "73"
 	},
 	{
-		name: "D5",
+		note: "D5",
 		midi: "74"
 	},
 	{
-		name: "Eb5",
+		note: "Eb5",
 		midi: "75"
 	},
 	{
-		name: "E5",
+		note: "E5",
 		midi: "76"
 	},
 	{
-		name: "F5",
+		note: "F5",
 		midi: "77"
 	},
 	{
-		name: "Fs5",
+		note: "Fs5",
 		midi: "78"
 	},
 	{
-		name: "G5",
+		note: "G5",
 		midi: "70"
 	},
 	{
-		name: "Gs5",
+		note: "Gs5",
 		midi: "80"
 	},
 	{
-		name: "A5",
+		note: "A5",
 		midi: "81"
 	},
 	{
-		name: "Bb5",
+		note: "Bb5",
 		midi: "82"
 	},
 	{
-		name: "B5",
+		note: "B5",
 		midi: "83"
 	}
 ];
@@ -424,12 +583,15 @@ var _ = require('lodash');
 
 var tunning = 'BbEb';
 
-// DEVOLVER OBj To con las funciones necesarias.
 var to = function(input){
   return {
+    input:input,
+    note: function() {
+      return input;
+    },
     midi: function() {
       var midis =  MidiNotes.filter(function(el,index){
-        if(el.name == input){
+        if(el.note == input){
           return el;
         }
       });
@@ -453,20 +615,20 @@ var to = function(input){
         return el;
       });
     
+    },
+    guitar: function(){
+      var strings =  GuitarNotes.filter(function(el,index){
+        if(el.note == input){
+          return el;
+        }
+      });
+      return strings.map(function(el){
+        return el.str;
+      });
+    
     }
   }
 };
-
-function toMidi(note){
-  var midis =  MidiNotes.filter(function(el,index){
-    if(el.name == note){
-      return el;
-    }
-  });
-  return midis.map(function(el){
-    return el.midi;
-  });
-}
 
 function midi(midi){
   //console.log(MidiNotes);
@@ -476,64 +638,12 @@ function midi(midi){
     }
   });
   var notes = midis.map(function(el){
-    return el.name;
-  });
-  return notes;
-}
-
-function midi2(midi){
-  //console.log(MidiNotes);
-  var midis =  MidiNotes.filter(function(el,index){
-    if(el.midi == midi){
-      return el;
-    }
-  });
-  var notes = midis.map(function(el){
-    return el.name;
+    return el.note;
   });
   return to(notes);
 }
 
-
-function toTriki(note){
-  var zenbakiak =  TrikiNotes[tunning].filter(function(el,index){
-    if(el.Ireki == note || el.Itxi == note){
-      return el;
-    }
-  });
-  return zenbakiak.map(function(el){
-    if(el.Ireki == note){
-      return "+" + el.Zenbakia;
-    }
-    if(el.Itxi == note){
-      return `${el.Zenbakia}`;
-    }
-    return el;
-  });
-
-}
-
 function triki(triki){
-  var direction = 'Itxi';
-  if(triki.charAt(0) === '+'){
-    direction = 'Ireki';
-  }
-  var zenbakiaRaw = triki.replace('+','').replace('-','');
-
-  var zenbakiak =  TrikiNotes[tunning].filter(function(el,index){
-   
-    
-    
-    if(el.Zenbakia == zenbakiaRaw){
-      return el;
-    }
-  });
-  return zenbakiak.map(function(el){
-    var note = el[direction];
-    return note;
-  });
-}
-function triki2(triki){
   var direction = 'Itxi';
   if(triki.charAt(0) === '+'){
     direction = 'Ireki';
@@ -554,81 +664,23 @@ function triki2(triki){
   });
   return to(output);
 }
-
-
-function nameToMidi(name) {
-  for (let key in MidiNotes){
-   if(MidiNotes.hasOwnProperty(key)){
-     if(MidiNotes[key] === name){
-       return key
-     }
-   }
-  }
-  return false;
-}
-function midiToName(midi) {
-  for (let key in MidiNotes){
-   if(MidiNotes.hasOwnProperty(key)){
-     if(key == midi){
-       return MidiNotes[key]
-     }
-   }
-  }
-  return false;
-}
-function midiToNumber(midi) {
-  var name =  Object.keys(MidiNotes).reduce((el)=> (
-    (el == midi) ?  MidiNotes[el] : false
-   ));
-  // console.log(name);
-   return midi
-}
-function numberToMidi(number,direction = 'all',tuning = 'BbEb'){
-  var triki = TrikiNotes[tuning][number];
-  if(direction === 'all') {
-    console.log(_.filter(MidiNotes,triki.Itxi));
-    console.log(_.findKey(MidiNotes, [triki.Itxi]));
-  }
-   // console.log(names);
-    return triki;
-  //}
-  
-  //return (direction == 'Itxi') ? numbersItxi : numbersIreki;
-}
-function numberToName(number,direction = 'all',tuning = 'BbEb'){
-  if(direction === 'all') {
-    return  TrikiNotes[tuning][number]
-  }
-  return TrikiNotes[tuning][number][direction]
-}
-function nameToNumber(name,direction = 'all',tuning = 'BbEb'){
-  var numbersIreki =  Object.values(TrikiNotes[tuning]).filter((el)=> (
-    (el.Ireki == name) ? el : false
-   ));
-   var numbersItxi =  Object.values(TrikiNotes[tuning]).filter((el)=> (
-    (el.Itxi == name) ?  el : false
-   ));
-
-  if(direction === 'all') {
-    return  {Itxi:numbersItxi,ireki:numbersIreki}
-  }
-  return (direction == 'Itxi') ? numbersItxi : numbersIreki;
+function guitar(input){
+  var strings =  GuitarNotes.filter(function(el,index){
+    if(el.str == input){
+      return el;
+    }
+  });
+  var notes = strings.map(function(el){
+    return el.note;
+  });
+  return to(notes);
 }
 
 var NoteMapper = /*#__PURE__*/Object.freeze({
   __proto__: null,
-  toMidi: toMidi,
   midi: midi,
-  midi2: midi2,
-  toTriki: toTriki,
   triki: triki,
-  triki2: triki2,
-  nameToMidi: nameToMidi,
-  midiToName: midiToName,
-  midiToNumber: midiToNumber,
-  numberToMidi: numberToMidi,
-  numberToName: numberToName,
-  nameToNumber: nameToNumber
+  guitar: guitar
 });
 
 export default NoteMapper;
