@@ -1,7 +1,7 @@
 {
   "name": "triki-maps",
   "version": "0.0.1",
-  "description": "Triki note converter",
+  "description": "Triki note converter.",
   "main": "dist/trikiMap.js",
   "browser": "dist/trikiMaps.browser.min.js",
   "module": "dist/trikiMaps.module.js",
